@@ -49,7 +49,7 @@ cat <<EOF > /etc/apt/sources.list.d/tvheadend.list.list
 deb [arch=amd64] https://apt.tvheadend.org/unstable bullseye main
 EOF
 
-wget -qO- https://doozer.io/keys/tvheadend/tvheadend/pgp | tee /etc/apt/trusted.gpg.d/tvheadend.asc &>/dev/null
+wget -qO- https://github.com/brusarp/proxmox-scripts/setup_files/pgp | tee /etc/apt/trusted.gpg.d/tvheadend.asc &>/dev/null
 
 echo -e "${CHECKMARK} \e[1;92m Installing Tvheadend... \e[0m"
 export DEBIAN_FRONTEND=noninteractive
